@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.scrolling-wrapper {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		}
+		.card {
+		display: inline-block;
+		}
+		.scrolling-wrapper {
+		webkit-overflow-scrolling: touch;
+		}
+		/*.scrolling-wrapper {
+		&::-webkit-scrollbar {
+		display: none;
+		}
+		}*/
+		.scroll {
+			width: 430px;
+			height: 300px;
+		}
+		a {
+			text-decoration: none;
+		}
+		#rocket {
+			width: 300px;
+			position: absolute;
+			animation: rocket 1.6s;
+			transform: translate(500px, 0);
+			/*animation-timing-function: linear;*/
+		    animation-iteration-count: 1;
+		    animation-direction: alternate;
+		    /*animation-delay: 2s;*/
+
+		}
+		#fire {
+			/*width: 90px;
+			height: 90px;
+			animation: fire 1.5s infinite;
+			animation-iteration-count: infinite;
+			animation-duration: .8s;
+			animation-timing-function: ease-out;
+			animation-direction: alternate;
+			position: absolute;
+			top: 501px;
+			left: 20px;
+			animation: fireTranslate 1.6s linear infinite;
+			transform: translate(500px, 0);
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+			transform: rotate(0deg);
+			animation-delay: 1.3s;*/
+			
+			position: relative;
+			width: 90px;
+			top: 20px;
+    		animation:pulse 1s, flame 1s;
+		    animation-duration: 1.6s;
+		    /*animation-timing-function: linear;*/
+		    animation-iteration-count: 1;
+		    animation-direction: alternate;
+		    transform: translate(600px, 0);
+		    /*animation-delay: 2s;*/
+		}
+		body {
+			background-color: pink;
+		}
+		#bar {
+			width: 300px;
+			height: 60px;
+			animation: bar 2s linear 1;
+			background-image: linear-gradient(#76ff51 30%,#187000 100%);
+			/*position: absolute;*/
+			top: -500px;
+			left: 100px;
+			transform: translateX(-50%);
+			transition: height 1s;
+		}
+		/*@keyframes fire {
+			100% { width: 70px; height: 70px;}
+			from {transform: translateX(0%);}
+			to {transform: translateX(510px); }
+		}
+		@keyframes fireTranslate {
+			100% { width: 70px; height: 70px;}
+			from {transform: translateX(0%);}
+			to {transform: translateX(510px); }
+		}*/
+		@keyframes flame {
+			from {
+		        transform: scaleX(.9) translateX(0%) rotate(0deg)
+		    }
+		    to {
+		        transform: scale(1.2) translateX(430px) rotate(-0deg)
+		    }
+		}
+		@keyframes rocket {
+			from {transform: translateX(0%);}
+			to {transform: translateX(500px); }
+		}
+		@keyframes bar {
+			0% {
+        		width: 45px
+		    }
+		    65% {
+		        width: 150px
+		    }
+		    100% {
+		        width: 300px
+		    }
+		}
+
+	</style>
+</head>
+<body>
+	<div id="head">
+		<div id="empty"></div>
+		<a href="index.html"><h1 id="home"><- HOME</h1></a>
+	</div>
+	<h1>Blogs</h1>
+	<div class="scrolling-wrapper">
+	  <div class="card"><img class="scroll" style="transform: rotate(180deg);" src="photos/CICmiami.jpg" alt=""></div>
+	  <div class="card"><img class="scroll" src="photos/CICmiami1.jpg"></div>
+	  <div class="card"><img class="scroll" src="photos/hacketon.jpg"></div>
+	  <div class="card"><img class="scroll" src="photos/back.jpg"></div>
+	</div><br><br>
+	<img id="fire" src="photos/fire.png" alt="">
+	<img id="rocket" src="photos/rocket.png" alt="rocket"><br>
+	<div id="bar"></div>
+</body>
+</html>

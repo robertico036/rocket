@@ -1,0 +1,107 @@
+body {
+/*	display: inline-block;*/
+/*margin-top: 60px;*/
+background-color: #e6e6e6;
+}
+#perfil {
+	border-radius: 90px;
+	width: 140px;
+	margin-left: 
+}
+#headLeft {
+	height: 200px;
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+#headRight {
+	height: 200px;
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+#title {
+	color: blue;
+	margin-left: 10px;
+	margin-top: 0;
+	font-family:  'Anton', sans-serif;
+	font-size: 40px;
+	font-weight: 800;
+}
+#parr {
+	font-size: 20px;
+	margin: 4px;
+	margin-left: 10px;
+	color: red;
+	font-weight: 800;
+}
+.logo {
+	width: 50px;
+}
+#cuerpo {
+	margin-top: 15%;
+	margin-left: 10%;
+	height: 35vh;
+	text-align: center;
+	display: inline-block;
+}
+.pages {
+	width: 120px;
+	/*margin-top: 10vh;
+	margin-left: 20px;
+	margin-right: 20px;*/
+	padding-bottom: 10px;
+}
+.pag {
+	display: inline-block;
+	margin: 10px;
+}
+#info {
+	width: 50px;
+	/*margin-top: 372px;*/
+}
+#info1 {
+	width: 50px;
+	/*margin-top: 372px;*/
+}
+#info2 {
+	width: 50px;
+	/*margin-top: 372px;*/
+}
+footer {
+	position: fixed;
+	bottom:  0; 
+}
+#copyright {
+	margin-left: 82vw;
+}
+#back {
+	margin-top: 16vh;
+	width: 100%;
+}
+.text {
+	
+}
+#emptySpace {
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
